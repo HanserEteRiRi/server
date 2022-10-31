@@ -1,0 +1,43 @@
+.title {
+	text-align: center;
+	color:white;
+	font-size: 65px;
+    font-weight: 900;
+	margin-top: 150px;
+    margin-left: 200px;
+}
+.upload {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.uploadbox{
+    width: 550px;
+    height: 270px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+}
+.arrow{
+    margin-top: 40px;
+    text-align: center;
+    color:white;
+	font-size: 20px;
+}
+.choosebox{
+    width: 200px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 685px;
+}
+.tip{
+    color:white;
+	font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
