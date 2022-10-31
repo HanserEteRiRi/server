@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `musearch` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `musearch` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `musearch`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
@@ -31,7 +31,7 @@ CREATE TABLE `comments` (
   `comment` varchar(2000) DEFAULT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`pk`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
