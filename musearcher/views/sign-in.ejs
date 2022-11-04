@@ -96,7 +96,7 @@
 			}
 			$.ajax({
 				type: "POST",
-				url: "http://localhost:3000/sign-in",
+				url: addr+"/sign-in",
 				data: data,
 				success:res=>{
 					console.log(res)
@@ -129,7 +129,7 @@
 			}
 			$.ajax({
 				type:"POST",
-				url:"http://localhost:3000/sign-in",
+				url:addr+"/sign-in",
 				data: data,
 				success: res=>{
 					console.log(res)

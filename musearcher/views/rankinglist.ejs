@@ -160,7 +160,7 @@
 
 		$.ajax({  //链接路由
             type: "POST",
-            url: "http://localhost:3000/rankinglist/" + '<%=num%>',
+            url: addr+"/rankinglist/" + '<%=num%>',
 
             success: res => {
                 console.log(res); // 服务器返回的song数据
@@ -204,7 +204,7 @@
 
 			$.ajax({
 				type:"POST",
-				url:"http://localhost:3000/listeninfo",
+				url:addr+"/listeninfo",
 				data:data,
 				success:res=>{
 					console.log(res)
@@ -240,7 +240,7 @@
 
             $.ajax({
 				type:"POST",
-				url:"http://localhost:3000/searchandplay",
+				url:addr+"/searchandplay",
 				data: data,
 				success:res=>{
                     // document.getElementById("play-source").setAttribute("src", res.url)
@@ -270,7 +270,7 @@
 
            	await $.ajax({
 				type:"POST",
-				url:"http://localhost:3000/searchandplay",
+				url:addr+"/searchandplay",
 				data: data,
 				success:res=>{
 					music_list[i].lyric = res.lyric

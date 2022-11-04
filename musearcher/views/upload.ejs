@@ -106,7 +106,7 @@
  		data.append('avatar', files[0]);
 		$.ajax({
 			type: "POST",
-			url: "http://localhost:3000/upload/",
+			url: addr+"/upload/",
 			data: data,
 			// 不修改 Content-Type 属性，使用 FormData 默认的 Content-Type 值
 			contentType: false,
@@ -139,7 +139,7 @@
 
         $.ajax({
             type:"POST",
-            url:"http://localhost:3000/listeninfo",
+            url:addr+"/listeninfo",
             data:data,
             success:res=>{
                 console.log(res)

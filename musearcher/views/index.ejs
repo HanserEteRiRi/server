@@ -288,7 +288,7 @@
 
         $.ajax({
             type:"POST",
-            url:"http://localhost:3000/listeninfo",
+            url: addr + "/listeninfo",
             data:data,
             success:res=>{
                 console.log(res)
@@ -336,17 +336,6 @@
       play(oldplayInfo);
     }
 
-    // $.ajax({
-    //     type:"POST",
-    //     url:"http://localhost:3000/rankinglist",
-    //     success: res=>{
-    //       setRankingList(res);
-    //         console.log(res)
-    //     },
-    //     error: err=>{
-    //         console.log(err)
-    //     }
-    // })
     if(localStorage.getItem("id") == undefined) {
 				var Rand = Math.random()
         var id = Math.round(Rand * 100000000);
@@ -356,7 +345,7 @@
     
     $.ajax({
         type:"POST",
-        url:"http://localhost:3000/recommend",
+        url:addr + "/recommend",
         data: {
             id: localStorage.getItem("id")
         },
@@ -373,8 +362,9 @@
 
     $.ajax({
       type: "get",
-      url: "http://localhost:3000/comment",
+      url: addr + "/comment",
       success: res=>{
+        console.log("comment", res)
         setComments(res)
       },
       error: err=>{
@@ -396,7 +386,7 @@
     function getComments() {
       $.ajax({
         type: "get",
-        url: "http://localhost:3000/comment",
+        url: addr + "/comment",
         success: res=>{
           
         },
@@ -406,12 +396,12 @@
       })
     }
 
-    function writeComments() {
-      
-    }
-
     function processComment(comment) {
-      return comment.replaceAll("[", "<a onclick='clicktolyric2(this)'>").replaceAll("]", "</a>")
+      if(comment !== null){
+        return comment.replaceAll("[", "<a onclick='clicktolyric2(this)'>").replaceAll("]", "</a>")
+      } else {
+        return null
+      }
     }
     
     $('#comment').click(() => {
@@ -428,7 +418,7 @@
       console.log(data)
       $.ajax({
         type: "post",
-        url: "http://localhost:3000/comment",
+        url: addr + "/comment",
         data: data,
         success: res=>{
           setComments(res)
@@ -451,7 +441,7 @@
       }
       await $.ajax({
         type:"POST",
-        url:"http://localhost:3000/searchandplay",
+        url: addr + "/searchandplay",
         data: data,
         success:res=>{
           document.getElementById("play-source").setAttribute("src", res.url)

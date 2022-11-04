@@ -148,7 +148,7 @@
 
 		$.ajax({  //链接路由
             type: "POST",
-            url: "http://localhost:3000/mvlist",
+            url: addr+"/mvlist",
             data:{
                 searchMv: localStorage.getItem("mvSearch")   
             },
@@ -197,7 +197,7 @@
 
 			$.ajax({
 				type:"POST",
-				url:"http://localhost:3000/listeninfo",
+				url:addr+"/listeninfo",
 				data:data,
 				success:res=>{
 					console.log(res)
@@ -246,7 +246,7 @@
 
             $.ajax({
 				type:"POST",
-				url:"http://localhost:3000/searchandplay",
+				url:addr+"/searchandplay",
 				data: data,
 				success:res=>{
                     document.getElementById("play-source").setAttribute("src", res.url)

@@ -132,7 +132,7 @@
 
 			$.ajax({  //链接路由
 				type: "POST",
-				url: "http://localhost:3000/search",
+				url: addr+"/search",
 				data: data,  //要搜索的music
 
 				success: res => {
@@ -186,7 +186,7 @@
 
 			$.ajax({
 				type:"POST",
-				url:"http://localhost:3000/listeninfo",
+				url:addr+"/listeninfo",
 				data:data,
 				success:res=>{
 					console.log(res)

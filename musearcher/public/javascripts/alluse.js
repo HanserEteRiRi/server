@@ -1,4 +1,7 @@
 let starList = []
+// const addr = "http://47.104.186.86:80"
+const addr = "http://localhost:3000"
+
 
 clicktostar = function () {
     if(localStorage.getItem("username") == "null") {
