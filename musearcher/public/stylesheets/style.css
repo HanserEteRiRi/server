@@ -19,6 +19,7 @@ header {
     width: 100%;
     z-index: 9999;
     background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 13px -3px rgb(0 0 0 / 20%)
 }
 
 .container {
