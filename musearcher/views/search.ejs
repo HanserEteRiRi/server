@@ -116,7 +116,7 @@
 		let play_singer = $("#play_singer")
 		let play_source = $("#play_source")
 		let music = $("#music");
-		
+		setHeaderUsername()
 		function jumptoupload() {
 			document.location.href = "upload";
 		}
@@ -167,44 +167,6 @@
 				}
 
 			})
-		}
-
-		function updata_listen_info(song) {
-			if(localStorage.getItem("id") == undefined) {
-				var Rand = Math.random()
-                var id = Math.round(Rand * 100000000);
-				localStorage.setItem("id", id)
-				localStorage.setItem("username", "newUser")
-			}
-			let data = { //歌曲点击信息传入服务器
-				"songname": song.play_song,
-				"songsrc": song.play_source,
-				"singer": song.play_singer,
-				"id": localStorage.getItem("id"),
-				"username": localStorage.getItem("username")
-			}
-
-			$.ajax({
-				type:"POST",
-				url:addr+"/listeninfo",
-				data:data,
-				success:res=>{
-					console.log(res)
-				},
-				error:err=>{
-					console.log(err)
-				}
-			})
-		}
-
-		function play(song) {
-			document.getElementById("play-image").setAttribute("src", song.play_image);
-			document.getElementById("play-source").setAttribute("src",  song.play_source );
-			document.getElementById("play-singer").innerHTML = song.play_singer;
-			document.getElementById("play-song").innerHTML = song.play_song;
-			document.getElementById("audio").load();
-
-			updata_listen_info(song);
 		}
 
 		var storageMusic = localStorage.getItem("searchthing")

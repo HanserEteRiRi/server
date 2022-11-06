@@ -93,7 +93,7 @@ let cache = (req, res, next) => {
     res.jsonResponse = res.json;
     res.json = (value) => {
       res.jsonResponse(value);
-      memcache.put(id, value, 100 * 1000); //设置100秒缓存
+      memcache.put(id, value, 300 * 1000); //设置100秒缓存
       console.log("recommend: put id:" + id + " to memory cache");
     };
     next();

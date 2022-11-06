@@ -9,4 +9,6 @@ $ cd musearcher
 $ npm run install
 $ npm run devstart
 ```
-
+远程部署更改
+vi public/javascripts/alluse.js
+vi bin/www

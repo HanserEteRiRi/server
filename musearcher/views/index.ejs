@@ -206,12 +206,7 @@
       localStorage.setItem("username", null)
     }
 
-    let _username = localStorage.getItem("username")
-    if(_username == "null") {
-      document.getElementById("username").innerHTML = "请先登录"
-    } else {
-      document.getElementById("username").innerHTML = localStorage.getItem("username")
-    }
+    setHeaderUsername()
 
     function jumptoupload() {
         document.location.href = "upload";
@@ -271,34 +266,6 @@
 		}
 
 
-    function play(song) {
-        document.getElementById("play-image").setAttribute("src", song.play_image);
-        document.getElementById("play-source").setAttribute("src",  song.play_source + '?' + new Date().getTime());
-        document.getElementById("play-singer").innerHTML = song.play_singer;
-        document.getElementById("play-song").innerHTML = song.play_song;
-        document.getElementById("audio").load();
-        
-        let data = { //歌曲点击信息传入服务器
-            "songname": song.play_song,
-            "songsrc": song.play_source,
-            "singer": song.play_singer,
-            "id": localStorage.getItem("id"),
-            "username": localStorage.getItem("username")
-        }
-
-        $.ajax({
-            type:"POST",
-            url: addr + "/listeninfo",
-            data:data,
-            success:res=>{
-                console.log(res)
-            },
-            error:err=>{
-                console.log(err)
-            }
-        })
-		}
-
     function setRankingList(songs) {
         if(songs.length == 0) {
           document.querySelector("#recommend").innerHTML = "没有推荐？请先试着听几首喜欢的歌吧";
@@ -331,7 +298,7 @@
     
     
     var old_playInfo = localStorage.getItem("play-info");
-    if(old_playInfo != "undefined") {
+    if(old_playInfo != "undefined" && old_playInfo != null) {
       let oldplayInfo = JSON.parse(old_playInfo);
       play(oldplayInfo);
     }
@@ -343,7 +310,10 @@
 				localStorage.setItem("username", "newUser")
 		}
     
-    $.ajax({
+    if(localStorage.getItem("username") === "null" || localStorage.getItem("username") == undefined){
+      console.log("请登录后查看推荐歌曲")
+    } else {
+      $.ajax({
         type:"POST",
         url:addr + "/recommend",
         data: {
@@ -358,7 +328,9 @@
         error: err=>{
             console.log(err)
         }
-    })
+      })
+    }
+    
 
     $.ajax({
       type: "get",

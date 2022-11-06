@@ -25,7 +25,9 @@
 				<div class="uploadtop" onclick="jumptoupload()"><p class="inupload">上传歌曲</p></div>
 				<div class="uploadtop" onclick="showStar()"><p class="inupload">我的收藏</p></div>
         		<div class="uploadtop-name"><p class="inupload-name" id="username"></p></div>
-				<img class="avatar-img" src="../images/avatar-01.jpg">
+				<a href="sign-in">
+					<img class="avatar-img" src="../images/avatar-01.jpg">
+				</a>
 			</div>
 		</div>
 	</header>
@@ -120,6 +122,8 @@
         document.location.href = "upload";
     }
 
+	setHeaderUsername()
+
 	$('#search-music').click(() => {
 		let searchMusic = $("#music").val();
 		let data = {
@@ -186,7 +190,8 @@
 		fileName.innerHTML = name;
 	}
 
-	function play(song) {
+	function play1(song) {
+		if (song == "undefined" || song == null) return;
         document.getElementById("play-image").setAttribute("src", song.play_image);
         document.getElementById("play-source").setAttribute("src",  song.play_source);
         document.getElementById("play-singer").innerHTML = song.play_singer;
@@ -196,7 +201,7 @@
 	var old_playInfo = localStorage.getItem("play-info");
     if(old_playInfo != "undefined") {
       let oldplayInfo = JSON.parse(old_playInfo);
-      play(oldplayInfo);
+      play1(oldplayInfo);
     }
 
 	function playUploadMusic(obj) {

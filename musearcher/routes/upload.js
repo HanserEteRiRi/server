@@ -33,13 +33,13 @@ router.post("/", function (req, res, next) {
   let form = new multiparty.Form();
   form.parse(req, (err, fields, file) => {
     console.log("file:", file);
-    if (JSON.stringify(file) === "{}") {
+    if (JSON.stringify(file) === "{}" || file === undefined) {
       //判断文件是否存在
       console.log("file not exist");
       return;
     }
     let fileName = file.avatar[0].originalFilename; //文件名
-    let sql0 = "select name from uploadMusic";
+    let sql0 = "select name from uploadmusic";
     database.query(sql0, (err, data) => {
       if (err) {
         console.log(err);
@@ -109,7 +109,7 @@ let cache = (req, res, next) => {
 
 // 获取上传音乐列表
 router.get("/getlist", cache, function (req, res, next) {
-  let sql = "select * from uploadMusic";
+  let sql = "select * from uploadmusic";
   database.query(sql, (err, data) => {
     if (err) {
       console.log("upload/getlist: 获取uploadMusicList失败");
@@ -150,7 +150,7 @@ router.get("/getUploadMusic", (req, res, next) => {
 router.post("/search", (req, res, next) => {
   let searchMus = req.body.search;
   console.log("search ", searchMus, " in upload Music");
-  let sql = "select name from uploadMusic";
+  let sql = "select name from uploadmusic";
   database.query(sql, (err, data) => {
     if (err) {
       console.log("error in upload/search:", err);

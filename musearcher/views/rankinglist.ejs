@@ -23,8 +23,9 @@
 				</a>
 			</div>
 			<div class="avatar">
-                <div class="upload" onclick="jumptoupload()"><p class="inupload">上传歌曲</p></div>
+                <div class="uploadtop" onclick="jumptoupload()"><p class="inupload">上传歌曲</p></div>
 				<div class="uploadtop" onclick="showStar()"><p class="inupload">我的收藏</p></div>
+				<div class="uploadtop-name"><p class="inupload-name" id="username"></p></div>
 				<a href="../sign-in">
 					<img class="avatar-img"  src="../images/avatar-01.jpg">
 				</a>
@@ -135,8 +136,9 @@
 		let play_source = $("#play_source")
 		let music = $("#music");
 
+		setHeaderUsername()
         function jumptoupload() {
-            document.location.href = "upload";
+            document.location.href = "../upload";
         }
 
         if('<%=num%>' == '1') {
@@ -192,39 +194,7 @@
             }
 
         })
-
-		function updata_listen_info(song) {
-			let data = { //歌曲点击信息传入服务器
-				"songname": song.play_song,
-				"songsrc": song.play_source,
-				"singer": song.play_singer,
-				"id": localStorage.getItem("id"),
-				"username": localStorage.getItem("username")
-			}
-
-			$.ajax({
-				type:"POST",
-				url:addr+"/listeninfo",
-				data:data,
-				success:res=>{
-					console.log(res)
-				},
-				error:err=>{
-					console.log(err)
-				}
-			})
-		}
-
-		function play(song) {
-			document.getElementById("play-image").setAttribute("src", song.play_image);
-			document.getElementById("play-source").setAttribute("src",  song.play_source);
-			document.getElementById("play-singer").innerHTML = song.play_singer;
-			document.getElementById("play-song").innerHTML = song.play_song;
-			document.getElementById("audio").load();
-
-			updata_listen_info(song);
-		}
-
+		
 		var old_playInfo = localStorage.getItem("play-info")
 
 		if(old_playInfo != "null") {
