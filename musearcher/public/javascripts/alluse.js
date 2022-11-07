@@ -170,6 +170,7 @@ function updata_listen_info(song) {
 }
 
 setHeaderUsername = () => {
+  let _username = localStorage.getItem("username");
   if (_username == "null") {
     document.getElementById("username").innerHTML = "请先登录";
   } else {

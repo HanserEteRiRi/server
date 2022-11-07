@@ -9,6 +9,7 @@ let url = require("url");
 var memcache = require("memory-cache");
 var searchUtil = require("search-util");
 const Fuse = require("fuse.js"); //模糊搜索库
+const NodeID3 = require("node-id3"); //mp3文件解析库
 // const FileType = require("file-type");
 // import { fileTypeFromFile } from "file-type";
 
@@ -143,6 +144,27 @@ router.get("/getUploadMusic", (req, res, next) => {
   readerStream.pipe(res); //使用管道传输
   readerStream.on("end", function () {
     res.end();
+  });
+});
+
+router.get("/getImg", (req, res, next) => {
+  let reqUrl = req.url;
+  let urlObj = url.parse(reqUrl, true);
+  let urlQuery = urlObj.query;
+  let musicFile = setting.uploadMusicDir + urlQuery.song;
+  NodeID3.read(musicFile, function (err, tags) {
+    if (err) {
+      console.log("error in upload getImg", err);
+      return;
+    }
+    // console.log(tags);
+    if (tags.image) {
+      res.writeHead(200, {
+        "Content-Type": tags.image.mime, //设置content-Type
+      });
+      res.end(tags.image.imageBuffer);
+      // readerStream.pipe(res); //使用管道传输
+    }
   });
 });
 
