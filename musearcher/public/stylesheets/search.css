@@ -36,7 +36,7 @@ section {
 }
 
 .time-fixed {
-    margin:15px 100px 0px 86px;
+    margin:15px 100px 0px 65px;
 }
 
 .search-list {
@@ -95,6 +95,14 @@ section {
     width: 100px;
     margin-left: 20px;
     margin-top: 13px;
+}
+
+.music-time1 {
+    cursor: pointer;
+    font-size: 10px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 7px;
 }
 
 .music-time>span {

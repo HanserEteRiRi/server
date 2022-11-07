@@ -370,3 +370,12 @@ audio {
     margin: auto auto;
     cursor: pointer;
 }
+
+.mv-svg {
+    height: 30px;
+}
+
+.star-svg {
+    height: 30px;
+    margin-right: 40px;
+}
