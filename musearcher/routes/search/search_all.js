@@ -3,6 +3,8 @@ var kuwo_search = require("./kuwo_search");
 var kugou_search = require("./kugou_search");
 var qq_search = require("./qq_search");
 
+// function uniq()
+
 async function search(searchContent) {
   // let songsFromMigu = migu_search(searchContent);
   // let songsFromKuwo = kuwo_search(searchContent);
