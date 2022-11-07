@@ -49,6 +49,18 @@ router.post("/", (req, res, next) => {
     console.log("now register");
     let sql = "select * from user where username=?";
     let sqlArr = [name];
+    if (name.length > 20) {
+      res.send({
+        msg: "用户名过长",
+      });
+      return;
+    }
+    if (pwd.length > 20) {
+      res.send({
+        msg: "密码过长",
+      });
+      return;
+    }
     let callBack = (err, data1) => {
       console.log(data1);
       if (err) {
