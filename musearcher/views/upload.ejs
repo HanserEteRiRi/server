@@ -205,7 +205,7 @@
     }
 
 	function playUploadMusic(obj) {
-		document.getElementById("play-image").setAttribute("src", "../images/avatar-01.jpg");
+		document.getElementById("play-image").setAttribute("src", addr + "/upload/getImg?song="+obj.innerHTML);
 		document.getElementById("play-song").innerHTML = obj.innerHTML;
 		document.getElementById("play-source").setAttribute("src", addr+"/upload/getUploadMusic?song="+obj.innerHTML)
 		document.getElementById("play-singer").innerHTML = "";
