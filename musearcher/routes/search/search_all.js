@@ -6,8 +6,10 @@ var qq_search = require("./qq_search");
 async function search(searchContent) {
   // let songsFromMigu = migu_search(searchContent);
   // let songsFromKuwo = kuwo_search(searchContent);
-  // let songsFromKugou = kugou_search(searchContent);
+  let songsFromKugou = kugou_search(searchContent);
   let songsFromQQ = qq_search(searchContent);
+
+  //   console.log(songsFromKugou);
 
   return songsFromQQ;
 }

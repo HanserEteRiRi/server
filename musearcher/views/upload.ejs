@@ -71,7 +71,7 @@
             <div class="title">上传歌曲</div>
 			<div class="uploadbox">
 				<input type="file" id="choose-file" class="tip" name="选择文件" onchange="handleFile()"></input> 
-				<div class="arrow"><img src="./images/向上箭头.svg"></div>
+				<div class="arrow"><img class="uploadsvg" src="./images/向上箭头.svg"></div>
                 <div id="filename" class="uploadbox-foot">请点击或将文件拖拽到此处</div>
 			</div>
 		
@@ -139,7 +139,7 @@
 				let listhtml = res.reduce((pre, cur)=>{
 					let result = tpl
 						.replace("{{songName}}", cur.item.name)
-					return result + pre;
+					return pre + result;
 				}, "")
 				document.querySelector("#search-list").innerHTML = listhtml
 			}
