@@ -20,6 +20,7 @@ clicktostar = function () {
     platform: play_info.play_platform,
     songid: play_info.play_songid,
     img: play_info.play_image,
+    platform: play_info.platform,
   };
   $.ajax({
     type: "post",
@@ -82,6 +83,13 @@ clicktoplay_star = async function (obj) {
   let i = obj.id;
   let starMusic = starList[i];
   console.log("starMusic", starMusic);
+  if (starMusic.platform === "Mu") {
+    document.getElementById("play-image").setAttribute("src", starMusic.img);
+    // document.getElementById("play-source").setAttribute("src", starMusic.url + '?' + new Date().getTime());
+    document.getElementById("play-singer").innerHTML = starMusic.artist;
+    document.getElementById("play-song").innerHTML = starMusic.song;
+    return;
+  }
   // let starList = JSON.parse(localStorage.getItem("starList"))
 
   let data = {

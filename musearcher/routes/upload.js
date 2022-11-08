@@ -121,6 +121,32 @@ router.get("/getlist", cache, function (req, res, next) {
   });
 });
 
+let cacheGetMusic = (req, res, next) => {
+  let reqUrl = req.url;
+  let urlObj = url.parse(reqUrl, true);
+  let urlQuerySong = urlObj.query.song;
+
+  let Data_cache = memcache.get(urlQuerySong);
+  console.log("in cacheGetMusic");
+  if (Data_cache) {
+    console.log("Music ", urlQuerySong, " is in cache");
+    res.json(Data_cache);
+    return;
+  } else {
+    //复制一个 json函数一个用来取值一个用来返回值
+    //重写JSON方法，在路由函数调用JSON方法时获取到需要缓存的数据,然后通过复制的jsonResponse进行返回
+    res.jsonResponse = res.json;
+    res.json = (value) => {
+      res.jsonResponse(value);
+      memcache.put(urlQuerySong, value, 10000 * 1000); //设置100秒缓存
+      console.log(
+        "getUploadMusic: put song:" + urlQuerySong + " to memory cache"
+      );
+    };
+    next();
+  }
+};
+
 //获取创建歌曲url，歌曲播放地址接口：/upload/getUploadMusic?song=
 router.get("/getUploadMusic", (req, res, next) => {
   //   let musicName = req.body.musicName;

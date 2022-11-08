@@ -211,11 +211,12 @@
 		document.getElementById("play-singer").innerHTML = "";
 		document.getElementById("audio").load();
 		let playInfo = {
-			"play_image": "../images/avatar-01.jpg",
+			"play_image": addr+"/upload/getImg?song="+obj.innerHTML,
 			"play_source": addr+"/upload/getUploadMusic?song="+obj.innerHTML,
 			"play_singer": "",
 			"play_song": obj.innerHTML,
-        	"play_lyric": ""
+        	"play_lyric": "",
+			"platform": "Mu"
 		};
 		localStorage.setItem("play-info", JSON.stringify(playInfo));
 	}
