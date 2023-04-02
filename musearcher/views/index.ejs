@@ -377,6 +377,7 @@
     }
     
     $('#comment').click(() => {
+      let _username = localStorage.getItem("username");
       if(_username == "null") {
         alert("请登陆后评论")
         return
@@ -394,6 +395,8 @@
         data: data,
         success: res=>{
           setComments(res)
+          
+          
           console.log("评论成功")
         },
         error: err=>{

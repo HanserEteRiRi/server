@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-25T07:41:01.522Z",
+    "end": "2022-11-25T07:41:01.576Z",
+    "duration": 54,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "85730f3e-18c1-4f39-950c-a4334bf61c06",
+      "title": "",
+      "fullFile": "E:\\MuSearcher\\musearcher\\test\\searchandplay.test.js",
+      "file": "\\test\\searchandplay.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5c616b55-e44e-4459-8ecf-65e76b4e4329",
+          "title": "test searchandplay",
+          "fullFile": "E:\\MuSearcher\\musearcher\\test\\searchandplay.test.js",
+          "file": "\\test\\searchandplay.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test 1",
+              "fullTitle": "test searchandplay test 1",
+              "timedOut": false,
+              "duration": 49,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"Response Data\",\n  \"value\": {\n    \"name\": \"爱你\",\n    \"artist\": \"王心凌\",\n    \"artists\": [\n      \"王心凌\"\n    ],\n    \"pic\": \"https://y.gtimg.cn/music/photo_new/T002R300x300M000001K65vv1SgkSk.jpg\",\n    \"url\": \"https://isure.stream.qqmusic.qq.com/M500000Jk6Wp4dCcoK.mp3?guid=658650575&vkey=7EE43AD1831B2E6EC13A9A478DF2E964B282D1BBA182135B0DB53F0427B5793FCCF7CF61CB6753AD2126B27DDFA3F730C8BCCBD8F31F7F88&uin=2906381114&fromtag=120042\",\n    \"lyric\": \"[ti:爱你]\\n[ar:王心凌]\\n[al:爱你]\\n[by:]\\n[offset:0]\\n[00:00.00]爱你 - 王心凌 (Cyndi Wang)\\n[00:00.59]词：潘瑛/谈晓珍/陈思宇\\n[00:01.19]曲：Lee Young Min\\n[00:01.79]编曲：Lee Jung-Hoon\\n[00:02.38]Rap：王绍伟\\n[00:02.89]Yo yo yo yo cyndi\\n[00:04.87]What what's wrong with me\\n[00:07.29]爱你\\n[00:08.32]\\n[00:09.05]Yo yo cyndi baby\\n[00:11.19]What's wrong with me\\n[00:12.70]\\n[00:13.74]Cyndi give me your love\\n[00:16.04]You make me sneeze all the time\\n[00:18.01]\\n[00:19.10]Yeah yeah yeah\\n[00:20.94]\\n[00:21.69]Now now\\n[00:23.12]怎么我一直狂打喷嚏\\n[00:25.51]在凌晨三点二十六分\\n[00:27.42]Let me sing let me sing a song\\n[00:28.93]陪你入睡\\n[00:30.28]\\n[00:31.62]What is love say yes say yes\\n[00:37.57]Cyndi I really do love you so\\n[00:39.41]如果你突然打了个喷嚏\\n[00:41.98]那一定就是我在想你\\n[00:44.22]如果半夜被手机吵醒\\n[00:46.66]啊 那是因为我关心\\n[00:48.88]常常想你说的话\\n[00:51.56]是不是别有用心\\n[00:53.85]明明很想相信\\n[00:56.26]却又忍不住怀疑\\n[00:58.38]\\n[00:58.92]在你的心里\\n[01:01.07]我是否就是唯一\\n[01:03.46]爱 就是有我常烦着你\\n[01:07.62]Ho baby\\n[01:08.46]情话多说一点\\n[01:10.61]想我就多看一眼\\n[01:12.75]\\n[01:13.35]表现多一点点\\n[01:15.11]让我能真的看见\\n[01:17.78]Oh bye\\n[01:18.66]少说一点想陪你不只一天\\n[01:22.61]多一点让我心甘情愿爱你\\n[01:27.21]\\n[01:41.84]喜欢在你的臂弯里胡闹\\n[01:44.20]你的世界是一座城堡\\n[01:46.62]在大头贴画满心号\\n[01:48.96]贴在手机上对你微笑\\n[01:51.13]常常想我说的话\\n[01:53.85]你是否听得进去\\n[01:56.28]明明很想生气\\n[01:58.68]却又止不住笑意\\n[02:00.72]Oh\\n[02:01.40]在我的心里你真的就是唯一\\n[02:05.89]爱就是有我常赖着你\\n[02:10.04]Ho baby\\n[02:10.89]情话多说一点\\n[02:13.01]想我就多看一眼\\n[02:15.72]表现多一点点\\n[02:17.51]让我能真的看见\\n[02:20.30]Oh bye\\n[02:21.06]少说一点想陪你不只一天\\n[02:25.03]多一点让我心甘情愿爱你\\n[02:29.34]就这样 一天多一点\\n[02:32.80]慢慢地累积感觉\\n[02:34.92]两人的世界就能够贴近一点\\n[02:43.56]Ho baby\\n[02:44.50]情话多说一点\\n[02:46.68]想我就多看一眼\\n[02:48.75]\\n[02:49.34]表现多一点点\\n[02:51.16]让我能真的看见\\n[02:53.82]Oh bye\\n[02:54.66]少说一点想陪你不只一天\\n[02:58.59]多一点让我心甘情愿爱你\\n[03:02.83]Ho baby\\n[03:03.68]情话多说一点\\n[03:05.81]想我就多看一眼\\n[03:08.48]表现多一点点\\n[03:10.30]让我能真的看见\\n[03:13.00]Oh bye\\n[03:13.89]少说一点想陪你不只一天\\n[03:17.91]多一点让我心甘情愿爱你\\n[03:22.61]多一点 才会慢慢发现\\n[03:26.55]\\n[03:27.64]因为你让我心甘情愿\\n\"\n  }\n}",
+              "code": "var _this = this;\nrequest\n  .post(\"/searchandplay\")\n  .send({\n    searchMusic: \"爱你王心凌\",\n  })\n  .expect(200)\n  .end((err, res) => {\n    if (err) done(err);\n    let data = res.body;\n    addContext(_this, {\n      title: \"Response Data\",\n      value: data,\n    });\n    done();\n  });",
+              "err": {},
+              "uuid": "5b8255b7-fcca-4aff-95e6-23bd2ccf90f5",
+              "parentUUID": "5c616b55-e44e-4459-8ecf-65e76b4e4329",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5b8255b7-fcca-4aff-95e6-23bd2ccf90f5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 49,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

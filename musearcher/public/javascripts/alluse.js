@@ -88,6 +88,21 @@ clicktoplay_star = async function (obj) {
     // document.getElementById("play-source").setAttribute("src", starMusic.url + '?' + new Date().getTime());
     document.getElementById("play-singer").innerHTML = starMusic.artist;
     document.getElementById("play-song").innerHTML = starMusic.song;
+    document
+      .getElementById("play-source")
+      .setAttribute(
+        "src",
+        addr + "/upload/getUploadMusic?song=" + starMusic.song
+      );
+    document.getElementById("audio").load();
+    let playInfo = {
+      play_image: starMusic.img,
+      play_source: addr + "/upload/getUploadMusic?song=" + starMusic.song,
+      play_singer: starMusic.artist,
+      play_song: starMusic.song,
+      play_lyric: "",
+    };
+    localStorage.setItem("play-info", JSON.stringify(playInfo));
     return;
   }
   // let starList = JSON.parse(localStorage.getItem("starList"))

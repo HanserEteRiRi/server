@@ -51,12 +51,14 @@ router.post("/", (req, res, next) => {
     let sqlArr = [name];
     if (name.length > 20) {
       res.send({
+        code: -1,
         msg: "用户名过长",
       });
       return;
     }
     if (pwd.length > 20) {
       res.send({
+        code: -2,
         msg: "密码过长",
       });
       return;
