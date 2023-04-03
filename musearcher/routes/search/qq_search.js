@@ -7,18 +7,20 @@ const e = require("express");
 
 async function searchmusic(searchContent) { //设为async函数，因为有axios存在等待行为。
 
-    var searchSrc = interface.qqSearch + searchContent + "&limit=100"; //输入搜索地址
+    var searchSrc = interface.qqSearch + searchContent + "&limit=50"; //输入搜索地址
     var songList = [];
     var searchSrcs2 = []; //歌曲rid搜索列表
     let searchSrcs3 = []; //歌词搜索列表
     var songs = [];
+
+    console.log("search from: ",searchSrc);
 
     await axios({ //await等待行为结束才会进行下一步
         method: 'get',
         url: searchSrc,
         responseType: 'json'
     }).then( (response) => {   //response:搜索结果对象
-        // console.log(response.data.data.list);
+        // console.log(response.data.req.data.body);
 
         for(var songid of response.data.req.data.body.song.list) { //页面信息在response.data中
             let searchSrc2 = interface.qqRid + songid.mid // url搜索地址
@@ -29,6 +31,7 @@ async function searchmusic(searchContent) { //设为async函数，因为有axios
             let newsong = new song()
             newsong.name = songid.name
             newsong.pic = interface.qqImage + songid.album.mid + ".jpg";
+            console.log(songid.album.mid)
             newsong.artists = [];
             if(songid.grp.length != 0) {
                 for(let singer of songid.grp[0].singer) {

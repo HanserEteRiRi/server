@@ -39,11 +39,12 @@ router.get("/", function (req, res, next) {
 });
 
 router.post("/", cache, function (req, res, next) {
+  console.log("search: searchMusic:" + req.body.searchMusic)
   let searchMusic = req.body.searchMusic;
   console.log(searchMusic);
   search(searchMusic).then((reqsong) => {
     song = reqsong;
-    console.log(song);
+    // console.log(song);
     res.json(song); //服务器返回song数据
   });
 });

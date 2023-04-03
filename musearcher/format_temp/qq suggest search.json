@@ -1,0 +1,114 @@
+{
+  "code": 0,
+  "data": {
+    "album": {
+      "count": 2,
+      "itemlist": [
+        {
+          "docid": "36062",
+          "id": "36062",
+          "mid": "002Neh8l0uciQZ",
+          "name": "魔杰座",
+          "pic": "http://y.gtimg.cn/music/photo_new/T002R180x180M000002Neh8l0uciQZ_1.jpg",
+          "singer": "周杰伦"
+        },
+        {
+          "docid": "60671",
+          "id": "60671",
+          "mid": "0024bjiL2aocxT",
+          "name": "十一月的萧邦",
+          "pic": "http://y.gtimg.cn/music/photo_new/T002R180x180M0000024bjiL2aocxT_3.jpg",
+          "singer": "周杰伦"
+        }
+      ],
+      "name": "专辑",
+      "order": 2,
+      "type": 3
+    },
+    "mv": {
+      "count": 2,
+      "itemlist": [
+        {
+          "docid": "57367",
+          "id": "57367",
+          "mid": "002Q03pz4CgNUz",
+          "name": "兰亭序",
+          "singer": "周杰伦",
+          "vid": "z00134ypgls"
+        },
+        {
+          "docid": "293791",
+          "id": "293791",
+          "mid": "00061J2t0b0PPW",
+          "name": "晴天",
+          "singer": "周杰伦",
+          "vid": "w0026q7f01a"
+        }
+      ],
+      "name": "MV",
+      "order": 3,
+      "type": 4
+    },
+    "singer": {
+      "count": 2,
+      "itemlist": [
+        {
+          "docid": "4558",
+          "id": "4558",
+          "mid": "0025NhlN2yWrP4",
+          "name": "周杰伦",
+          "pic": "http://y.gtimg.cn/music/photo_new/T001R150x150M0000025NhlN2yWrP4_8.jpg",
+          "singer": "周杰伦"
+        },
+        {
+          "docid": "199509",
+          "id": "199509",
+          "mid": "003fA5G40k6hKc",
+          "name": "周深",
+          "pic": "http://y.gtimg.cn/music/photo_new/T001R150x150M000003fA5G40k6hKc_5.jpg",
+          "singer": "周深"
+        }
+      ],
+      "name": "歌手",
+      "order": 1,
+      "type": 2
+    },
+    "song": {
+      "count": 4,
+      "itemlist": [
+        {
+          "docid": "361947418",
+          "id": "361947418",
+          "mid": "003w2xz20QlUZt",
+          "name": "最伟大的作品",
+          "singer": "周杰伦"
+        },
+        {
+          "docid": "212877900",
+          "id": "212877900",
+          "mid": "001J5QJL1pRQYB",
+          "name": "等你下课 (with 杨瑞代)",
+          "singer": "周杰伦"
+        },
+        {
+          "docid": "107192078",
+          "id": "107192078",
+          "mid": "003OUlho2HcRHC",
+          "name": "告白气球",
+          "singer": "周杰伦"
+        },
+        {
+          "docid": "396112160",
+          "id": "396112160",
+          "mid": "0031Du4z459ld2",
+          "name": "忘了",
+          "singer": "周林枫"
+        }
+      ],
+      "name": "单曲",
+      "order": 0,
+      "type": 1
+    }
+  },
+  "subcode": 0
+}
