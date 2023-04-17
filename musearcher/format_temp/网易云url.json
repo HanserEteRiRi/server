@@ -1,0 +1,81 @@
+[
+  {
+    "data": [
+      {
+        "id": 167655,
+        "url": "http://m704.music.126.net/20230417173459/29f025a017abeab96f2e973991f07138/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096602465/4884/6d96/3e49/0f565432c77fabdc0ff003cbab478687.mp3?authSecret=000001878e7a66f60e380aaba2461338",
+        "br": 128000,
+        "size": 4373151,
+        "md5": "0f565432c77fabdc0ff003cbab478687",
+        "code": 200,
+        "expi": 1200,
+        "type": "mp3",
+        "gain": 0,
+        "peak": 1,
+        "fee": 8,
+        "uf": null,
+        "payed": 0,
+        "flag": 260,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": "standard",
+        "encodeType": "mp3",
+        "freeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 273266
+      },
+      {
+        "id": 353066,
+        "url": null,
+        "br": 0,
+        "size": 0,
+        "md5": null,
+        "code": -110,
+        "expi": 1200,
+        "type": null,
+        "gain": 0,
+        "peak": null,
+        "fee": 1,
+        "uf": null,
+        "payed": 0,
+        "flag": 260,
+        "canExtend": false,
+        "freeTrialInfo": null,
+        "level": null,
+        "encodeType": null,
+        "freeTrialPrivilege": {
+          "resConsumable": true,
+          "userConsumable": false,
+          "listenType": null,
+          "cannotListenReason": null
+        },
+        "freeTimeTrialPrivilege": {
+          "resConsumable": false,
+          "userConsumable": false,
+          "type": 0,
+          "remainTime": 0
+        },
+        "urlSource": 0,
+        "rightSource": 0,
+        "podcastCtrp": null,
+        "effectTypes": null,
+        "time": 0
+      }
+    ],
+    "code": 200
+  }
+]

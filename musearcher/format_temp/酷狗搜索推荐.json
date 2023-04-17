@@ -1,9 +1,8 @@
 {
-    "status": 1,
-    "ErrorCode": 0,
-    "error_code": 0,
     "data": [
         {
+            "RecordCount": 5,
+            "LableName": "",
             "RecordDatas": [
                 {
                     "Use": "alluser_h",
@@ -11,82 +10,83 @@
                         "热搜"
                     ],
                     "IsRadio": 0,
+                    "IsKlist": 1,
                     "HintInfo": "周杰伦",
                     "MatchCount": 0,
-                    "IsKlist": 1,
-                    "Hot": 275542
+                    "Hot": 415204
                 },
                 {
                     "Use": "alluser_h",
                     "IsRadio": 0,
+                    "IsKlist": 1,
                     "HintInfo": "周深",
                     "MatchCount": 0,
-                    "IsKlist": 1,
-                    "Hot": 64253
+                    "Hot": 58886
                 },
                 {
                     "Use": "alluser_h",
                     "IsRadio": 0,
+                    "IsKlist": 1,
                     "HintInfo": "周传雄",
                     "MatchCount": 0,
-                    "IsKlist": 1,
-                    "Hot": 48663
+                    "Hot": 48501
                 },
                 {
                     "Use": "alluser_h",
                     "IsRadio": 0,
+                    "IsKlist": 1,
                     "HintInfo": "周华健",
                     "MatchCount": 0,
-                    "IsKlist": 1,
-                    "Hot": 29493
+                    "Hot": 31713
                 },
                 {
                     "Use": "alluser_h",
                     "IsRadio": 0,
-                    "HintInfo": "周柏豪",
-                    "MatchCount": 0,
                     "IsKlist": 1,
-                    "Hot": 9448
+                    "HintInfo": "周慧敏",
+                    "MatchCount": 0,
+                    "Hot": 11975
                 }
-            ],
-            "RecordCount": 5,
-            "LableName": ""
+            ]
         },
         {
+            "RecordCount": 2,
+            "LableName": "MV",
             "RecordDatas": [
                 {
-                    "HintInfo": "周杰伦 - 最伟大的作品 / Greatest Works of Art",
-                    "MatchCount": 0,
                     "IsRadio": 0,
-                    "Hot": 20466
+                    "HintInfo": "周深 - 铃芽之旅",
+                    "MatchCount": 0,
+                    "Hot": 104461
                 },
                 {
-                    "HintInfo": "周杰伦 - 还在流浪",
-                    "MatchCount": 0,
                     "IsRadio": 0,
-                    "Hot": 11292
+                    "HintInfo": "周杰伦 - 兰亭序",
+                    "MatchCount": 0,
+                    "Hot": 71012
                 }
-            ],
-            "RecordCount": 2,
-            "LableName": "MV"
+            ]
         },
         {
+            "RecordCount": 2,
+            "LableName": "专辑",
             "RecordDatas": [
                 {
+                    "IsRadio": 0,
                     "HintInfo": "周杰伦 - 魔杰座",
                     "MatchCount": 0,
-                    "IsRadio": 0,
-                    "Hot": 171140551
+                    "Hot": 298586798
                 },
                 {
-                    "HintInfo": "周杰伦 - 十一月的萧邦",
-                    "MatchCount": 0,
                     "IsRadio": 0,
-                    "Hot": 122262500
+                    "HintInfo": "周杰伦 - 我很忙",
+                    "MatchCount": 0,
+                    "Hot": 182623106
                 }
-            ],
-            "RecordCount": 2,
-            "LableName": "专辑"
+            ]
         }
-    ]
+    ],
+    "ErrorCode": 0,
+    "status": 1,
+    "error_code": 0
 }
