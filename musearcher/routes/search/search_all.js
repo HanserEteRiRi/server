@@ -10,12 +10,30 @@ async function search(searchContent) {
   // let songsFromMigu = migu_search(searchContent);
   // let songsFromKuwo = kuwo_search(searchContent);
   // let songsFromKugou = kugou_search(searchContent);
-  // let songsFromQQ = qq_search(searchContent);
-  let songsFromWy = wy_search(searchContent);
+  let songsFromQQ = qq_search(searchContent);
+  // let songsFromWy = wy_search(searchContent);
 
-  //   console.log(songsFromKugou);
+  // const priority = [
+  //   songsFromQQ,
+  //   songsFromWy,
+  //   songsFromKugou,
+  //   songsFromMigu,
+  //   songsFromKuwo,
+  // ];
 
-  return songsFromWy;
+  // const combinedSongs = [];
+  // const songExists = (song1, song2) =>
+  //   song1.name === song2.name && song1.artist === song2.artist;
+
+  // priority.forEach((songList) => {
+  //   songList.forEach((song) => {
+  //     if (!combinedSongs.some((existingSong) => songExists(song, existingSong))) {
+  //       combinedSongs.push(song);
+  //     }
+  //   });
+  // });
+
+  return songsFromQQ;
 }
 
 module.exports = search;
