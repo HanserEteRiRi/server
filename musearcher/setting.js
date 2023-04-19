@@ -1,5 +1,6 @@
 // var host = "http://iecoxe.top:5000"
-const host = "http://localhost:5000";
+// const host = "http://localhost:5000"; // 本地测试
+const host = "http://43.138.199.62:5000"; // 服务器
 
 module.exports = {
   kugouSearch: host + "/v1/kugou/search?key=",
